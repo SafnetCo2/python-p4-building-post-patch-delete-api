@@ -2,22 +2,25 @@
 This project is a Flask application providing an API for managing games, reviews, and users, supporting CRUD operations: POST, GET, PUT, and DELETE requests.
 
 ## Table of Contents
-[Installation]Installation
-[DatabaseSetup]Database Setup
-Seeding the Database
-Running the Application
-API Endpoints
-Postman Examples
-License
-Installation
+- [Installation](#installation)
+- [Database Setup](#database-setup)
+- [Seeding the Database](#seeding-the-database)
+- [Running the Application](#running-the-application)
+- [API Endpoints](#api-endpoints)
+- [Games](#games)
+- [Reviews](#reviews)
+- [Users](#users)
+- [Postman Examples](#postman-examples)
+- [License](#license)
+
+## Installation
 Clone the repository:
 
-## bash
-
+```bash
 git clone https://github.com/learn-co-curriculum/python-p4-building-post-patch-delete-api
-Create a virtual environment:
 
-## Create and activate a virtual environment:
+
+
 
 
 python -m venv venv
