@@ -1,62 +1,52 @@
-Building a POST/PATCH/DELETE API
-This project is a Flask application that provides an API for managing games, reviews, and users. The API supports CRUD operations, including POST, GET, PUT, and DELETE requests.
+## Building a POST/PATCH/DELETE API
+This project is a Flask application providing an API for managing games, reviews, and users, supporting CRUD operations: POST, GET, PUT, and DELETE requests.
 
-Table of Contents
+## Table of Contents
 Installation
 Database Setup
 Seeding the Database
 Running the Application
 API Endpoints
 Postman Examples
-Templates
 License
 Installation
 Clone the repository:
 
-bash
+## bash
 Copy code
-git clone https://github.com/learn-co-curriculum/python-p4-building-post-patch-delete-api
-Create a virtual environment:
+bash Copy code git clone https://github.com/learn-co-curriculum/python-p4-building-post-patch-delete-api Create a virtual environment:
+Create and activate a virtual environment:
 
 bash
 Copy code
 python -m venv venv
-Activate the virtual environment:
+venv\Scripts\activate    # On Windows
+source venv/bin/activate # On macOS/Linux
+Install dependencies:
 
-On Windows:
-bash
-Copy code
-venv\Scripts\activate
-On macOS/Linux:
-bash
-Copy code
-source venv/bin/activate
-Install the dependencies:
-
-bash
+# bash
 Copy code
 pip install -r requirements.txt
 Database Setup
 Initialize the database:
-bash
+# bash
 Copy code
 flask db init
 flask db migrate -m "Initial migration."
 flask db upgrade
 Seeding the Database
-Run the seed script to populate the database with initial data:
-bash
+Run the seed script:
+# bash
 Copy code
 python seed.py
 Running the Application
 Run the Flask application:
 
-bash
+# bash
 Copy code
 python app.py
-Access the application in your web browser:
+Access the application:
 
-arduino
 Copy code
 http://127.0.0.1:5000
 API Endpoints
@@ -81,12 +71,14 @@ DELETE /users/int:id: Delete a specific user by ID.
 Postman Examples
 Games
 GET /games
-Open Postman.
+
+## Open Postman.
 Create a new GET request.
 Set the URL to http://127.0.0.1:5000/games.
 Send the request and view the response.
 POST /games
-Open Postman.
+
+## Open Postman.
 Create a new POST request.
 Set the URL to http://127.0.0.1:5000/games.
 In the Body tab, select raw and JSON, then add:
@@ -101,12 +93,14 @@ Copy code
 Send the request and view the response.
 Reviews
 GET /reviews
-Open Postman.
+
+## Open Postman.
 Create a new GET request.
 Set the URL to http://127.0.0.1:5000/reviews.
 Send the request and view the response.
 POST /reviews
-Open Postman.
+
+## Open Postman.
 Create a new POST request.
 Set the URL to http://127.0.0.1:5000/reviews.
 In the Body tab, select raw and JSON, then add:
@@ -121,12 +115,13 @@ Copy code
 Send the request and view the response.
 Users
 GET /users
-Open Postman.
+
+## Open Postman.
 Create a new GET request.
 Set the URL to http://127.0.0.1:5000/users.
 Send the request and view the response.
 POST /users
-Open Postman.
+## Open Postman.
 Create a new POST request.
 Set the URL to http://127.0.0.1:5000/users.
 In the Body tab, select raw and JSON, then add:
@@ -136,11 +131,5 @@ Copy code
     "name": "New User"
 }
 Send the request and view the response.
-Templates
-Ensure you have the following HTML templates in the templates directory:
-
-index.html: To display the list of games.
-reviews.html: To display the list of reviews.
-game_detail.html: To display details of a specific game.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## License
+This project is licensed under the MIT [LICENSE](LICENSE).
