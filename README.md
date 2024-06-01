@@ -2,8 +2,8 @@
 This project is a Flask application providing an API for managing games, reviews, and users, supporting CRUD operations: POST, GET, PUT, and DELETE requests.
 
 ## Table of Contents
-Installation
-Database Setup
+[Installation]Installation
+[DatabaseSetup]Database Setup
 Seeding the Database
 Running the Application
 API Endpoints
@@ -18,14 +18,14 @@ git clone https://github.com/learn-co-curriculum/python-p4-building-post-patch-d
 Create a virtual environment:
 
 ## Create and activate a virtual environment:
-bash
+
 
 python -m venv venv
 venv\Scripts\activate    # On Windows
 source venv/bin/activate # On macOS/Linux
 Install dependencies:
 
-## bash
+
 
 pip install -r requirements.txt
 Database Setup
@@ -41,7 +41,7 @@ python3 app.py
 The application will be accessible at http://127.0.0.1:5000.
 
 ## API Endpoints
-Games
+# Games
 GET /games: Retrieve all games.
 POST /games: Create a new game.
 GET /games/int
