@@ -13,63 +13,63 @@ Installation
 Clone the repository:
 
 ## bash
-Copy code
-bash Copy code git clone https://github.com/learn-co-curriculum/python-p4-building-post-patch-delete-api Create a virtual environment:
-Create and activate a virtual environment:
 
+git clone https://github.com/learn-co-curriculum/python-p4-building-post-patch-delete-api
+Create a virtual environment:
+
+## Create and activate a virtual environment:
 bash
-Copy code
+
 python -m venv venv
 venv\Scripts\activate    # On Windows
 source venv/bin/activate # On macOS/Linux
 Install dependencies:
 
-# bash
-Copy code
+## bash
+
 pip install -r requirements.txt
 Database Setup
-Initialize the database:
-# bash
-Copy code
-flask db init
-flask db migrate -m "Initial migration."
-flask db upgrade
-Seeding the Database
-Run the seed script:
-# bash
-Copy code
-python seed.py
-Running the Application
-Run the Flask application:
+The application uses SQLite as the database. The database is initialized and migrated automatically when the application runs.
 
-# bash
-Copy code
-python app.py
-Access the application:
+## Seeding the Database
+The database can be seeded with initial data by running the seed.py script provided in the repository.
 
-Copy code
-http://127.0.0.1:5000
-API Endpoints
+## Running the Application
+To run the Flask application, execute the following command:
+
+python3 app.py
+The application will be accessible at http://127.0.0.1:5000.
+
+## API Endpoints
 Games
 GET /games: Retrieve all games.
 POST /games: Create a new game.
-GET /games/int:id: Retrieve a specific game by ID.
-PUT /games/int:id: Update a specific game by ID.
-DELETE /games/int:id: Delete a specific game by ID.
-Reviews
+GET /games/int
+: Retrieve a specific game by ID.
+PUT /games/int
+: Update a specific game by ID.
+DELETE /games/int
+: Delete a specific game by ID.
+## Reviews
 GET /reviews: Retrieve all reviews.
 POST /reviews: Create a new review.
-GET /reviews/int:id: Retrieve a specific review by ID.
-PUT /reviews/int:id: Update a specific review by ID.
-DELETE /reviews/int:id: Delete a specific review by ID.
-Users
+GET /reviews/int
+: Retrieve a specific review by ID.
+PUT /reviews/int
+: Update a specific review by ID.
+DELETE /reviews/int
+: Delete a specific review by ID.
+## Users
 GET /users: Retrieve all users.
 POST /users: Create a new user.
-GET /users/int:id: Retrieve a specific user by ID.
-PUT /users/int:id: Update a specific user by ID.
-DELETE /users/int:id: Delete a specific user by ID.
+GET /users/int
+: Retrieve a specific user by ID.
+PUT /users/int
+: Update a specific user by ID.
+DELETE /users/int
+: Delete a specific user by ID.
 Postman Examples
-Games
+## Games
 GET /games
 
 ## Open Postman.
@@ -77,13 +77,12 @@ Create a new GET request.
 Set the URL to http://127.0.0.1:5000/games.
 Send the request and view the response.
 POST /games
-
 ## Open Postman.
 Create a new POST request.
 Set the URL to http://127.0.0.1:5000/games.
 In the Body tab, select raw and JSON, then add:
 json
-Copy code
+
 {
     "title": "New Game",
     "genre": "Genre",
@@ -126,7 +125,7 @@ Create a new POST request.
 Set the URL to http://127.0.0.1:5000/users.
 In the Body tab, select raw and JSON, then add:
 json
-Copy code
+
 {
     "name": "New User"
 }
