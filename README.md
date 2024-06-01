@@ -13,12 +13,12 @@ This project is a Flask application providing an API for managing games, reviews
 - [Postman Examples](#postman-examples)
 - [License](#license)
 
-## Installation
+# Installation
 Clone the repository:
 git clone https://github.com/learn-co-curriculum/python-p4-building-post-patch-delete-api
 
 
-## bash
+# bash
 python -m venv venv
 venv\Scripts\activate    # On Windows
 source venv/bin/activate # On macOS/Linux
@@ -27,16 +27,16 @@ pip install -r requirements.txt
 Database Setup
 The application uses SQLite as the database. The database is initialized and migrated automatically when the application runs.
 
-## Seeding the Database
+# Seeding the Database
 The database can be seeded with initial data by running the seed.py script provided in the repository.
 
-## Running the Application
+# Running the Application
 To run the Flask application, execute the following command:
 
 python3 app.py
 The application will be accessible at http://127.0.0.1:5000.
 
-## API Endpoints
+# API Endpoints
 # Games
 GET /games: Retrieve all games.
 POST /games: Create a new game.
@@ -65,10 +65,9 @@ PUT /users/int
 DELETE /users/int
 : Delete a specific user by ID.
 Postman Examples
-## Games
 GET /games
 
-## in postman.
+#  Postman.
 # Create a new GET request.
 Set the URL to http://127.0.0.1:5000/games.
 Send the request and view the response.
