@@ -13,12 +13,12 @@ This project is a Flask application providing an API for managing games, reviews
 - [Postman Examples](#postman-examples)
 - [License](#license)
 
-# Installation
+## Installation
 Clone the repository:
 git clone https://github.com/learn-co-curriculum/python-p4-building-post-patch-delete-api
 
 
-# bash
+### bash
 python -m venv venv
 venv\Scripts\activate    # On Windows
 source venv/bin/activate # On macOS/Linux
@@ -27,17 +27,17 @@ pip install -r requirements.txt
 Database Setup
 The application uses SQLite as the database. The database is initialized and migrated automatically when the application runs.
 
-# Seeding the Database
+## Seeding the Database
 The database can be seeded with initial data by running the seed.py script provided in the repository.
 
-# Running the Application
+## Running the Application
 To run the Flask application, execute the following command:
 
 python3 app.py
 The application will be accessible at http://127.0.0.1:5000.
 
-# API Endpoints
-# Games
+## API Endpoints
+### Games
 GET /games: Retrieve all games.
 POST /games: Create a new game.
 GET /games/int
@@ -46,7 +46,7 @@ PUT /games/int
 : Update a specific game by ID.
 DELETE /games/int
 : Delete a specific game by ID.
-## Reviews
+### Reviews
 GET /reviews: Retrieve all reviews.
 POST /reviews: Create a new review.
 GET /reviews/int
@@ -55,7 +55,7 @@ PUT /reviews/int
 : Update a specific review by ID.
 DELETE /reviews/int
 : Delete a specific review by ID.
-## Users
+### Users
 GET /users: Retrieve all users.
 POST /users: Create a new user.
 GET /users/int
@@ -67,13 +67,13 @@ DELETE /users/int
 Postman Examples
 GET /games
 
-#  Postman.
-# Create a new GET request.
+### Postman.
+### Create a new GET request.
 Set the URL to http://127.0.0.1:5000/games.
 Send the request and view the response.
 POST /games
 
-# Create a new POST request.
+### Create a new POST request.
 Set the URL to http://127.0.0.1:5000/games.
 In the Body tab, select raw and JSON, then add:
 json
@@ -89,13 +89,13 @@ Reviews
 GET /reviews
 
 
-# Create a new GET request.
+### Create a new GET request.
 Set the URL to http://127.0.0.1:5000/reviews.
 Send the request and view the response.
 POST /reviews
 
 
-# Create a new POST request.
+### Create a new POST request.
 Set the URL to http://127.0.0.1:5000/reviews.
 In the Body tab, select raw and JSON, then add:
 json
@@ -111,11 +111,7 @@ Users
 GET /users
 
 
-# Create a new GET request.
-Set the URL to http://127.0.0.1:5000/users.
-Send the request and view the response.
-
-# Create a new POST request.
+### Create a new POST request.
 Set the URL to http://127.0.0.1:5000/users.
 In the Body tab, select raw and JSON, then add:
 json
