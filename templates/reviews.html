@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reviews</title>
+</head>
+<body>
+    <h1>Reviews</h1>
+    <ul>
+        {% for review in reviews %}
+            <li>{{ review.id }} - Score: {{ review.score }}, Comment: {{ review.comment }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

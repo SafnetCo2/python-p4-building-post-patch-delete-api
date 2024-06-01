@@ -108,3 +108,5 @@ with app.app_context():
         reviews.remove(r)
 
     db.session.commit()
+if __name__=='__main__':
+    app.run()
