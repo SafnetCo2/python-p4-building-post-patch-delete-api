@@ -7,29 +7,22 @@ This project is a Flask application providing an API for managing games, reviews
 - [Seeding the Database](#seeding-the-database)
 - [Running the Application](#running-the-application)
 - [API Endpoints](#api-endpoints)
-- [Games](#games)
-- [Reviews](#reviews)
-- [Users](#users)
+  - [Games](#games)
+  - [Reviews](#reviews)
+  - [Users](#users)
 - [Postman Examples](#postman-examples)
 - [License](#license)
 
 ## Installation
 Clone the repository:
-
-```bash
 git clone https://github.com/learn-co-curriculum/python-p4-building-post-patch-delete-api
 
 
-
-
-
+## bash
 python -m venv venv
 venv\Scripts\activate    # On Windows
 source venv/bin/activate # On macOS/Linux
 Install dependencies:
-
-
-
 pip install -r requirements.txt
 Database Setup
 The application uses SQLite as the database. The database is initialized and migrated automatically when the application runs.
@@ -75,13 +68,13 @@ Postman Examples
 ## Games
 GET /games
 
-## Open Postman.
-Create a new GET request.
+## in postman.
+# Create a new GET request.
 Set the URL to http://127.0.0.1:5000/games.
 Send the request and view the response.
 POST /games
-## Open Postman.
-Create a new POST request.
+
+# Create a new POST request.
 Set the URL to http://127.0.0.1:5000/games.
 In the Body tab, select raw and JSON, then add:
 json
@@ -96,14 +89,14 @@ Send the request and view the response.
 Reviews
 GET /reviews
 
-## Open Postman.
-Create a new GET request.
+
+# Create a new GET request.
 Set the URL to http://127.0.0.1:5000/reviews.
 Send the request and view the response.
 POST /reviews
 
-## Open Postman.
-Create a new POST request.
+
+# Create a new POST request.
 Set the URL to http://127.0.0.1:5000/reviews.
 In the Body tab, select raw and JSON, then add:
 json
@@ -118,13 +111,12 @@ Send the request and view the response.
 Users
 GET /users
 
-## Open Postman.
-Create a new GET request.
+
+# Create a new GET request.
 Set the URL to http://127.0.0.1:5000/users.
 Send the request and view the response.
-POST /users
-## Open Postman.
-Create a new POST request.
+
+# Create a new POST request.
 Set the URL to http://127.0.0.1:5000/users.
 In the Body tab, select raw and JSON, then add:
 json
